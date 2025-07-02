@@ -1,0 +1,10 @@
+name:  Hello world workflow
+om: push
+  jobs:
+    say-hello:
+       runs-on: unbuntu-leatest
+       steps:
+        - name: checkout code
+          uses: actions/checkout@v3
+        - name: Say Hello 
+           run: echo "Hello from Github Actions" 
